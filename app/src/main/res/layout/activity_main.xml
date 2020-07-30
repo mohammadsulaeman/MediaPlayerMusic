@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:padding="20sp"
+    android:layout_gravity="center"
+    android:background="#FF8C00"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songName"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Judul Lagu"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="30dp"
+        android:background="#fff"
+        android:padding="30dp"
+        android:src="@drawable/headphone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Durasi Lagu"
+        android:id="@+id/songDurasi"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_back"
+            android:layout_marginLeft="14sp"
+            android:onClick="backforward"
+            android:src="@android:drawable/ic_media_rew"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_pause"
+            android:layout_marginLeft="14sp"
+            android:onClick="pause"
+            android:src="@android:drawable/ic_media_pause"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_play"
+            android:layout_marginLeft="14sp"
+            android:onClick="play"
+            android:src="@android:drawable/ic_media_play"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_forword"
+            android:layout_marginLeft="14sp"
+            android:onClick="forward"
+            android:src="@android:drawable/ic_media_ff"/>
+    </LinearLayout>
+
+
+</LinearLayout>
